@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sách Bán Chạy</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">BookStore</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="Dangnhap.html">Đăng nhập</a></li>
+                    <li><a href="Giohang.html">Giỏ hàng</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="slider">
+            <div class="slide active">
+                <img src="https://via.placeholder.com/1200x400" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x400" alt="Banner 2">
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Danh mục sách -->
+    <section class="categories">
+        <h2>Danh mục sách</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <img src="https://via.placeholder.com/150" alt="Văn học">
+                <h3>Sách văn học</h3>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/150" alt="Kinh tế">
+                <h3>Sách Kinh tế</h3>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/150" alt="Thiếu nhi">
+                <h3>Sách Thiếu nhi</h3>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/150" alt="Thiếu nhi">
+                <h3>Sách Lịch sử</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sản phẩm bán chạy -->
+    <section class="products">
+        <h2>Sản phẩm bán chạy</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Sách 1">
+                <h3>Sách hay 1</h3>
+                <p>199.000 VNĐ</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Sách 2">
+                <h3>Sách hay 2</h3>
+                <p>299.000 VNĐ</p>
+            </div>
+             <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Sách 2">
+                <h3>Sách hay 2</h3>
+                <p>299.000 VNĐ</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Sách 2">
+                <h3>Sách hay 2</h3>
+                <p>299.000 VNĐ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Các sách được yêu thích -->
+   
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    // JavaScript để chạy banner tự động
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function changeSlide() {
+        // Ẩn slide hiện tại
+        slides[currentIndex].classList.remove('active');
+        // Chuyển sang slide tiếp theo
+        currentIndex = (currentIndex + 1) % totalSlides;
+        // Hiển thị slide tiếp theo
+        slides[currentIndex].classList.add('active');
+    }
+
+    // Thay đổi slide mỗi 3 giây
+    setInterval(changeSlide, 3000);
+});
+
+
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 BookStore. Tất cả các quyền được bảo lưu.</p>
+            <p>Liên hệ: support@bookstore.com | Hotline: 1900 123 456</p>
+        </div>
+    </footer>
+</body>
+</html>

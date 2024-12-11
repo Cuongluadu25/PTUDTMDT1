@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Thanh Toán</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Thanh Toán</h1>
+        <div class="checkout-form">
+            <div class="billing-details">
+                <h2>Thông Tin Thanh Toán</h2>
+                <form>
+                    <label for="name">Họ và Tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+                    <label for="address">Địa Chỉ</label>
+                    <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>
+
+                    <label for="phone">Số Điện Thoại</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+                </form>
+            </div>
+
+            <div class="order-summary">
+                <h2>Đơn Hàng Của Bạn</h2>
+                <ul>
+                    <li>Sản Phẩm 1 <span>500,000 VNĐ</span></li>
+                    <li>Sản Phẩm 2 <span>700,000 VNĐ</span></li>
+                    <li>Tổng Cộng <span>1,200,000 VNĐ</span></li>
+                </ul>
+                <button class="checkout-button">Hoàn Tất Thanh Toán</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
