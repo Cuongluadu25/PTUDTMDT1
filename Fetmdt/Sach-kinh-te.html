@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách Kinh Tế</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .book-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e9ecef;
+        }
+
+        .book-card:hover {
+            background-color: #f8f9fa;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h4 mb-0">Sách Kinh Tế</h1>
+                <nav>
+                    <ul class="nav flex-row">
+                        <li class="nav-item"><a href="TrangChu.html" class="nav-link text-white">Trang chủ</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link text-white">Đăng nhập</a></li>
+                        <li class="nav-item"><a href="Giohang.html" class="nav-link text-white">Giỏ hàng</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Book Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="text-center mb-4">Sách Kinh Tế</h3>
+            <div class="row text-center">
+                <!-- Book 1 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="book-card p-3 border">
+                        <div class="book-image mb-2"></div>
+                        <p>Đầu Tư Thông Minh</p>
+                        <p class="text-danger">200.000 VNĐ</p>
+                    </div>
+                </div>
+                <!-- Book 2 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="book-card p-3 border">
+                        <div class="book-image mb-2"></div>
+                        <p>Kinh Tế Vĩ Mô</p>
+                        <p class="text-danger">250.000 VNĐ</p>
+                    </div>
+                </div>
+                <!-- Book 3 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="book-card p-3 border">
+                        <div class="book-image mb-2"></div>
+                        <p>Lý Thuyết Kinh Tế</p>
+                        <p class="text-danger">300.000 VNĐ</p>
+                    </div>
+                </div>
+                <!-- Book 4 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="book-card p-3 border">
+                        <div class="book-image mb-2"></div>
+                        <p>Tài Chính Cá Nhân</p>
+                        <p class="text-danger">350.000 VNĐ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 BookStore. Tất cả các quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
